@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var myList = new String[] { "The Witcher 3", "Overwatch 2", "Magic the Gathering Online", "Lorcana", "Remnant I", "Legend of Zelda", "Pokemon: Gold & Silver" };
+
+            var orderByLengthDescending = myList.OrderByDescending(x => x.Length);
+
+            foreach (var item in orderByLengthDescending)
+            {
+                Console.WriteLine(item);
+            }
+            /*   Console.WriteLine();*/
         }
     }
 }
